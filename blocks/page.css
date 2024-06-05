@@ -9,6 +9,8 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
+  background-color: black;
+  color: white;
 }
 
 .page__content {
