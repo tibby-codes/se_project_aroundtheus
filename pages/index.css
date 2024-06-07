@@ -1,5 +1,5 @@
 @import url("../vendor/normalize.css");
-@import url("../blocks/fonts.css");
+@import url("../vendor/fonts.css");
 @import url("../blocks/page.css");
 @import url("../blocks/header.css");
 @import url("../blocks/profile.css");
@@ -7,49 +7,3 @@
 @import url("../blocks/card.css");
 @import url("../blocks/footer.css ");
 @import url("../blocks/@media.css");
-
-@media screen and (max-width: 480px) {
-  .profile {
-    flex-direction: column;
-  }
-
-  .profile__title {
-    margin-top: 30px;
-  }
-
-  .profile__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .profile__description {
-    width: 100%;
-    text-align: center;
-    margin-top: 14px;
-  }
-
-  .profile__add-button {
-    margin: 0;
-    min-width: 282px;
-    margin-bottom: 30px;
-  }
-
-  .profile__edit-button {
-    margin: 0;
-  }
-
-  .header .page__section {
-    justify-content: center;
-    margin-left: 27px;
-  }
-
-  .profile__logo {
-    margin-left: 27px;
-  }
-
-  .footer {
-    margin-left: 19px;
-  }
-}

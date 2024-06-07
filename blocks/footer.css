@@ -1,5 +1,9 @@
 .footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 60px;
+  margin-left: 200px;
   margin-top: 67px;
   color: #545454;
 }
