@@ -3,7 +3,12 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 60px;
-  margin-left: 200px;
   margin-top: 67px;
+  margin-left: 190px;
   color: #545454;
+}
+
+.footer__copyright {
+  font-size: 18px;
+  line-height: 21.78px;
 }

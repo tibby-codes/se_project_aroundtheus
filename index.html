@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>Around The U.S</title>
     <link href="./pages/index.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://rsms.me/" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
   </head>
   <body class="page">
     <div class="page__content">
@@ -15,25 +13,25 @@
         <img
           src="./images/logo.svg"
           alt="Around The U.S. Logo"
-          class="profile__logo"
+          class="header__logo"
         />
       </header>
       <main class="content">
         <section class="profile page__section">
           <img
-            src="./images/jacques-cousteau (1) 4.jpg"
+            src="./images/jacques-cousteau(1)4.jpg"
             alt="avatar"
             class="profile__image"
           />
           <div class="profile__info">
             <h1 class="profile__title">Jacques Cousteau</h1>
-            <button class="profile__edit-button"></button>
+            <button class="profile__edit-button" type="button"></button>
             <p class="profile__description">Explorer</p>
           </div>
-          <button class="profile__add-button"></button>
+          <button class="profile__add-button" type="button"></button>
         </section>
         <section class="cards page__section">
-          <ul class="card__list">
+          <ul class="cards__list">
             <li class="card">
               <img
                 src="./images/yosemite.jpg"
@@ -42,7 +40,7 @@
               />
               <div class="card__description">
                 <h2>Yosemite Valley</h2>
-                <button class="card__like-button"></button>
+                <button class="card__like-button" type="button"></button>
               </div>
             </li>
             <li class="card">
@@ -79,7 +77,11 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/vanoise.jpg" class="card__image" />
+              <img
+                src="./images/vanoise.jpg"
+                class="card__image"
+                alt="vanoise"
+              />
               <div class="card__description">
                 <h2>Vanoise National</h2>
                 <button class="card__like-button"></button>
@@ -98,10 +100,12 @@
             </li>
           </ul>
         </section>
+      </main>
+      <section>
         <footer class="footer">
           <p class="footer__copyright">&copy;2022 Around The U.S.</p>
         </footer>
-      </main>
+      </section>
     </div>
   </body>
 </html>

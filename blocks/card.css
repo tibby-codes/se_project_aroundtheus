@@ -8,6 +8,7 @@
 }
 
 .card__image {
+  object-fit: cover;
   width: 282px;
   height: 282px;
 }
@@ -37,4 +38,10 @@
   width: 21px;
   height: 18px;
   border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.card__like-button:hover {
+  opacity: 60%;
 }

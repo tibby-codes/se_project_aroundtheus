@@ -1,7 +1,24 @@
 @media screen and (max-width: 480px) {
+  .header {
+    margin-top: 28px;
+  }
+
+  .header__logo {
+    width: 126px;
+    height: 24px;
+  }
+
   .profile {
     flex-direction: column;
     display: flex;
+    padding-top: 0;
+  }
+
+  .profile__image {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
   }
 
   .profile__title {
@@ -19,13 +36,13 @@
   .profile__description {
     width: 100%;
     text-align: center;
-    margin-top: 14px;
+    margin-bottom: 36px;
+    margin-top: 0;
   }
 
   .profile__add-button {
     margin: 0;
     min-width: 282px;
-    margin-bottom: 30px;
   }
 
   .profile__edit-button {
@@ -40,13 +57,19 @@
   .header .page__section {
     justify-content: center;
     margin-left: 27px;
+    margin-bottom: 36px;
   }
 
-  .profile__logo {
+  .header__logo {
     margin-left: 27px;
   }
 
+  .card__description {
+  }
+
   .footer {
+    margin: auto;
     margin-left: 19px;
+    font-size: 14px;
   }
 }
