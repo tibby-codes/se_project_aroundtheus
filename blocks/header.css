@@ -1,8 +1,28 @@
+@media screen and (max-width: 480px) {
+  .header {
+    margin-top: 28px;
+  }
+
+  .header__logo {
+    width: 126px;
+    height: 24px;
+  }
+
+  .header .page__section {
+    justify-content: center;
+    margin-left: 27px;
+    margin-bottom: 36px;
+  }
+}
+
 .header {
   margin-top: 45px;
   border-bottom: 2px;
-  color: rgb(84 84 84 / 0.7);
+  border-color: #545454;
+  opacity: 0.7;
 }
 
 .header__logo {
+  height: 33px;
+  width: 173px;
 }

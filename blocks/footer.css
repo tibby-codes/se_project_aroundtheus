@@ -1,9 +1,21 @@
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: auto;
+    margin-left: 19px;
+    font-size: 14px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 60px;
-  margin-top: 67px;
+  margin-top: 38px;
   margin-left: 190px;
   color: #545454;
 }
