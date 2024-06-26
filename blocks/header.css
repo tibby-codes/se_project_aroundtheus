@@ -1,3 +1,14 @@
+.header {
+  margin-top: 45px;
+  border-bottom: 2px;
+  border-color: rgba(84, 84, 84, 0.7);
+}
+
+.header__logo {
+  height: 33px;
+  width: 173px;
+}
+
 @media screen and (max-width: 480px) {
   .header {
     margin-top: 28px;
@@ -13,16 +24,4 @@
     margin-left: 27px;
     margin-bottom: 36px;
   }
-}
-
-.header {
-  margin-top: 45px;
-  border-bottom: 2px;
-  border-color: #545454;
-  opacity: 0.7;
-}
-
-.header__logo {
-  height: 33px;
-  width: 173px;
 }
