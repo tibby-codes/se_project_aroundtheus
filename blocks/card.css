@@ -31,6 +31,12 @@
   padding-right: 20px;
   align-items: center;
   justify-content: space-between;
+  line-height: 29.05px;
+}
+
+.card__title {
+  margin: 0;
+  height: 29px;
 }
 
 .card__like-button {
