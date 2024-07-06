@@ -2,6 +2,7 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 .page__section {
@@ -9,7 +10,7 @@
   width: 100%;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 36.25px;
 }
 
 .page__content {

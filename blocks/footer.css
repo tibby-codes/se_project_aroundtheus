@@ -4,8 +4,8 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 60px;
-  margin-top: 38px;
-  margin-left: 190px;
+  margin-top: 30.75px;
+  margin-left: 200px;
   color: #545454;
 }
 
@@ -20,6 +20,7 @@
   .footer {
     margin: auto;
     margin-left: 19px;
+    margin-bottom: 36px;
   }
 
   .footer__copyright {

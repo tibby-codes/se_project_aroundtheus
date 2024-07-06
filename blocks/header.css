@@ -7,22 +7,24 @@
 .header__logo {
   height: 33px;
   width: 173px;
+  margin-bottom: 41px;
 }
 
 @media screen and (max-width: 480px) {
   .header {
     margin-top: 28px;
-    margin-left: 27px;
+    padding-left: 27px;
   }
 
   .header__logo {
     width: 126px;
     height: 24px;
+    margin-bottom: 32px;
   }
 
   .header .page__section {
     justify-content: center;
     margin-left: 27px;
-    margin-bottom: 36px;
+    margin-bottom: 42px;
   }
 }
