@@ -6,7 +6,7 @@ The Goal of this Project is to show responsiveness across the most widley used s
 
 ## Link to my Project!
 
-https://github.com/tibby-codes/se_project_aroundtheus/deployments/github-pages
+https://tibby-codes.github.io/se_project_aroundtheus/
 
 ## Tech Stack
 
