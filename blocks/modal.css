@@ -12,9 +12,9 @@
 }
 
 .modal__container {
-  background: white;
+  background-color: white;
   color: #000;
-  padding: 40px;
+  padding: 36px;
   border-radius: 10px;
   max-width: 360px;
   width: 100%;
@@ -22,16 +22,19 @@
 }
 
 .modal__close {
-  position: absolute;
   background-image: url(../images/close.svg);
-  top: 0px;
-  right: 0px;
+  background-color: transparent;
+  position: absolute;
+  color: aqua;
+  top: -45px;
+  right: -45px;
   height: 40px;
   width: 40px;
-  background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .modal__close:hover {
