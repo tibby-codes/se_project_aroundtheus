@@ -79,8 +79,8 @@
   width: 100%;
 }
 
-.modal_opened {
-  display: flex;
+.modal__opened {
+  display: none;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
