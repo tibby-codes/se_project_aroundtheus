@@ -50,7 +50,7 @@ const cardTemplate = document.querySelector("#card-template").content.firstEleme
 /*--------------------------------------------------------------------------------*/
 
 function closePopup() {
-  profileEditModal.classList.remove(".modal__opened");
+  profileEditModal.classList.remove("modal__opened");
 }
 
 function getCardElement(cardData) {
