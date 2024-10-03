@@ -11,7 +11,7 @@
   z-index: 1000;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
 }
 
@@ -84,16 +84,36 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   .modal__container {
-    max-width: 100%;
-    margin: 0 10px;
+    max-width: 282px;
+    margin: 0 19px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+    transform: translateY(-145px);
   }
 
+  
+
   .modal__heading {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .modal__button {
     font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .modal__close { 
+   right: 8px;
+   height: 26px;
+   width: 26px;
+  }
+
+  .modal__input {
+    font-size: 14px;
+    padding: 13px 0;
   }
 }
 
