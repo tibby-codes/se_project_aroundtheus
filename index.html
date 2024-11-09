@@ -8,7 +8,7 @@
     <link href="./pages/index.css" rel="stylesheet" />
   </head>
   <body class="page">
-    <div class="page__content">
+   <div class="page__content">
       <header class="header page__section">
         <img
           src="./images/logo.svg"
@@ -40,7 +40,7 @@
         </footer>
       </section>
     </div>
-
+        <!-- Edit Modal -->
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close"></button>
@@ -57,11 +57,39 @@
           />
           <label class="modal__label"></label>
           <input
-            class="modal__input"
+            class="modal__input"   
             type="text"
             id="profile-description-input"
             name="description"
             placeholder="Explorer"
+            required
+          />
+          <button class="modal__button" type="submit">Save</button>
+        </form>
+      </div>
+     </div>
+       <!--Add Card Modal -->
+     <div class="modal" id="profile-add-modal">
+      <div class="modal__container">
+        <button class="modal__close"></button>
+        <h3 class="modal__heading">New Place</h3>
+        <form class="modal__form" id="add-card-form">
+          <label class="modal__label"></label>
+          <input
+            class="modal__input modal__input_type_title"
+            type="text"
+            id="profile-title-input"
+            name="title"
+            placeholder="Title"
+            required
+          />
+          <label class="modal__label"></label>
+          <input
+            class="modal__input modal__input_type_url"
+            type="url"
+            id="profile-description-input"
+            name="description"
+            placeholder="Image URL"
             required
           />
           <button class="modal__button" type="submit">Save</button>

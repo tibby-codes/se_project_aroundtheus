@@ -1,4 +1,4 @@
-const initialCards = [
+const initialCards = [ 
   {
     name: "Yoseimite Valley",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
@@ -92,4 +92,4 @@ profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
   cardListEl.append(cardElement);
-});
+}); 
