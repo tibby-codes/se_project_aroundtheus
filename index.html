@@ -43,10 +43,14 @@
         <!-- Edit Modal -->
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button 
+          class="modal__close"
+          type="button"
+          aria-label="Close Edit Profile Modal"
+        ></button>
         <h2 class="modal__heading">Edit profile</h2>
         <form class="modal__form" name="profile-edit-modal">
-          <label class="modal__label"></label>
+          <label class="modal__label" for="profile-title-input"></label>
           <input
             class="modal__input"
             type="text"
@@ -71,24 +75,28 @@
        <!--Add Card Modal -->
      <div class="modal" id="add-card-modal">
       <div class="modal__container">
-        <button class="modal__close"></button>
+        <button 
+          class="modal__close"
+          type="button"
+          aria-label="Close Add Card Modal"
+        ></button>
         <h3 class="modal__heading">New Place</h3>
         <form class="modal__form" id="add-card-form">
-          <label class="modal__label"></label>
+          <label class="modal__label" for="add-card-title-input"></label>
           <input
             class="modal__input modal__input_type_title"
             type="text"
-            id="profile-title-input"
+            id="add-card-title-input"
             name="title"
             placeholder="Title"
             required
           />
-          <label class="modal__label"></label>
+          <label class="modal__label" for="add-card-url-input"></label>
           <input
             class="modal__input modal__input_type_url"
             type="url"
-            id="profile-description-input"
-            name="description"
+            id="add-card-url-input"
+            name="url"
             placeholder="Image URL"
             required
           />
