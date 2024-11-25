@@ -54,6 +54,10 @@
   border-radius: 2px;
 }
 
+.card__like-button_active {
+  background-image: url(../images/active.svg);
+}
+
 .card__like-button:hover {
   opacity: 0.5;
 }
