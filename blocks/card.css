@@ -10,6 +10,7 @@
   list-style: none;
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
 
 .card__list {
@@ -60,4 +61,21 @@
 
 .card__like-button:hover {
   opacity: 0.5;
+}
+
+.card__delete-button {
+  background-image: url(../images/Trashactive.svg);
+  height: 19px;
+  width: 18px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+}
+
+
+.card__delete-button:hover {
+  opacity: 0.7;
 }
