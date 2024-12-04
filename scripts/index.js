@@ -49,6 +49,10 @@ const cardInputUrl = addCardFormElement.querySelector(".modal__input_type_url");
 const cardListEl = document.querySelector(".cards__list");
 const cardTemplate = document.querySelector("#card-template").content.firstElementChild;
 const addNewCardButton = document.querySelector(".profile__add-button");
+const imageViewerModal = document.querySelector("#image-viewer-modal");
+const imageViewerCloseButton = imageViewerModal.querySelector(".modal__close");
+const modalImage = imageViewerModal.querySelector(".modal__image");
+const modalCaption = imageViewerModal.querySelector(".modal__caption");
 
 // Form data 
 const nameInput = addCardFormElement.querySelector
@@ -79,6 +83,15 @@ const cardElement = getCardElement(cardData);
 cardListEl.prepend(cardElement);
 }
 
+function openImageModal(imageSrc, imageAlt) {
+  modalImage.src = imageSrc;
+  modalImage.alt = imageAlt;
+  modalCaption.textContent = imageAlt;
+  openPopup(imageViewerModal);
+}
+
+
+
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
@@ -94,6 +107,10 @@ function getCardElement(cardData) {
    // Add functionality for delete button
    deleteButton.addEventListener("click", () => {
     cardElement.remove(); // Removes the card from the DOM
+  });
+
+  cardImageEl.addEventListener("click", () => {
+    openImageModal(cardData.link, cardData.name);
   });
 
 return cardElement;
