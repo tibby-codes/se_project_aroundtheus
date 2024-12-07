@@ -54,6 +54,7 @@ const imageViewerCloseButton = imageViewerModal.querySelector(".modal__close");
 const modalImage = imageViewerModal.querySelector(".modal__image");
 const modalCaption = imageViewerModal.querySelector(".modal__caption");
 
+
 // Form data 
 const nameInput = addCardFormElement.querySelector
 
@@ -92,6 +93,8 @@ function openImageModal(imageSrc, imageAlt) {
 
 
 
+
+
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
@@ -113,7 +116,12 @@ function getCardElement(cardData) {
     openImageModal(cardData.link, cardData.name);
   });
 
-return cardElement;
+  likeButton.addEventListener("click", () => {
+    likeButton.classList.toggle("card__like-button_active");
+  });
+
+
+return cardElement; 
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -150,11 +158,19 @@ profileEditButton.addEventListener("click", () => {
 profileEditCloseButton.addEventListener("click",() => 
   closePopup(profileEditModal)
 );
+
+
+
+
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 // add new card  
 addNewCardButton.addEventListener("click", () => openPopup(addCardModal));
 addCardModalCloseButton.addEventListener("click", () => closePopup(addCardModal));
+
+imageViewerCloseButton.addEventListener("click", () => {
+  closePopup(imageViewerModal);
+}); 
 
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl)); 
