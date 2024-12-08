@@ -66,6 +66,7 @@ const nameInput = addCardFormElement.querySelector
 function closePopup(modal) {
   profileEditModal.classList.remove("modal_opened");
   addCardModal.classList.remove("modal_opened");
+  modal.classList.remove("modal_opened");
 }
 
 
@@ -74,9 +75,12 @@ function closePopup(modal) {
  }
 
 
+
+ function openPopup(modal) {
+  modal.classList.remove("modal_opened");
+}
 function openPopup(modal) {
   modal.classList.add("modal_opened");
-
 }
 
 function renderCard(cardData, cardListEl) {

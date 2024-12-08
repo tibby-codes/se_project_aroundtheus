@@ -1,4 +1,6 @@
 .modal {
+  opacity: 0;
+  visibility: hidden;
   display: none;
   position: fixed;
   top: 0;
@@ -9,12 +11,22 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);  
+}
+
+.modal.modal_opened {
+  visibility: visible;
+  animation: fadeIn 1s ease forwards;
+}
+
+.modal.modal__close {
+  animation: fadeOut 1s ease forwards;
 }
 
 .modal_opened {
   display: flex;  
-
-}
+  transform: scale(1);
+  }
 
 .modal__container {
   background-color: white;
@@ -22,8 +34,19 @@
   border-radius: 10px;
   max-width: 360px;
   width: 100%;
+  padding: 36px;
   position: relative;
+  transform: scale(0.95);
 }
+
+.modal__container_type_image {
+  background-color: transparent;
+  max-width: 75vw;
+  max-height: 75vh;
+  height: 100%;
+  width: 40%;
+}
+
 
 .modal__close {
   background-image: url(../images/close.svg);
@@ -86,12 +109,6 @@
   height: 100%;
   object-fit: fill; 
   border-radius: 5px; 
- 
-}
-
-
-.modal__container_type_image {
-  background-color: transparent;
 }
 
 .modal__caption {
@@ -110,9 +127,24 @@
     padding-left: 22px;
     padding-right: 22px;
     transform: translateY(-145px);
+    margin-top: 50px;
   }
 
-  
+  .modal__container_type_image {
+    background-color: transparent;
+    max-width: 75vw;
+    max-height: 75vh;
+    height: 50%;
+    width: 70%;
+  }
+
+  .modal__image {
+    border-radius: 3px;
+  }
+
+  .modal__caption {
+    font-size: 12px; 
+  }
 
   .modal__heading {
     font-size: 18px;
@@ -135,9 +167,10 @@
     font-size: 14px;
     padding: 13px 0;
   }
+  
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 786px) {
   .modal__container {
     max-width: 400px;
   }
@@ -154,5 +187,50 @@
 @media (min-width: 769px) {
   .modal__container {
     max-width: 358px;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .modal__container {
+    max-width: 358px;
+  }
+
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
   }
 }
