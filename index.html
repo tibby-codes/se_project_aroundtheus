@@ -40,7 +40,7 @@
         </footer>
       </section>
     </div>
-        <!-- Edit Modal -->
+       
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button 
@@ -72,7 +72,7 @@
         </form>
       </div>
      </div>
-       <!--Add Card Modal -->
+       
      <div class="modal" id="add-card-modal">
       <div class="modal__container">
         <button 
@@ -107,22 +107,22 @@
     <div class="modal" id="image-viewer-modal">
       <div class="modal__container modal__container_type_image">
         <button 
-          class="modal__close"
+          class="modal__close modal__close-image-viewer"
           type="button"
           aria-label="Close Image Viewer Modal"
         ></button>
-        <img class="modal__image" src="" alt="Modal Image" />
+        <img class="modal__image" src="" />
         <p class="modal__caption"></p>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
-        <img class="card__image" src="" alt="" />
+        <img class="card__image" src="https://via.placeholder.com/150" alt="card image" />
           <div class="card__description">
            <h2 class="card__title"></h2>
            <button class="card__like-button" type="button"></button>
-           <button class="card__delete-button" aria-label="Delete card"type="button"></button>
+           <button class="card__delete-button" aria-label="Delete-card" type="button"></button>
           </div>
       </li>
     </template>
