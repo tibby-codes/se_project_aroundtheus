@@ -1,4 +1,4 @@
-# Sprint 3- Around The U.S.
+# Sprint 6- Around The U.S.
 
 ## Description
 

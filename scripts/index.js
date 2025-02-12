@@ -110,6 +110,38 @@ function getCardElement(cardData) {
 return cardElement; 
 }
 
+function handleOverlayClick(event) {
+  if (event.target.classList.contains("modal_opened")) {
+    closePopup(event.target);
+  }
+}
+
+// Add this listener to all modals
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("mousedown", handleOverlayClick);
+});
+
+function handleEscClose(event) {
+  if (event.key === "Escape") {
+    const openedModal = document.querySelector(".modal_opened");
+    if (openedModal) {
+      closePopup(openedModal);
+    }
+  }
+}
+
+// Attach event listener when popup is opened
+function openPopup(modal) {
+  modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscClose);
+}
+
+// Remove event listener when popup is closed
+function closePopup(modal) {
+  modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscClose);
+}
+
 /*---------------------------------------------------------------------------------*/
 /*                             Event Handlers                                      */
 /*----------------------------------------------------------------------------------*/
