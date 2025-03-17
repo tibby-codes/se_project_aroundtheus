@@ -99,6 +99,11 @@
   border: none;
   border-bottom: 1px solid gray;
   width: 100%;
+
+}
+
+.modal__input:invalid {
+  border-bottom: #FF0000;
 }
 
 .modal__button {
@@ -110,6 +115,15 @@
   cursor: pointer;
   margin-top: 10px;
   width: 100%;
+}
+
+.modal__error {
+  color: #FF0000;
+}
+
+.modal__button_disabled {
+  background-color: #808080;
+  cursor: not-allowed;
 }
 
 .modal__image {
@@ -170,6 +184,7 @@
     margin-top: 30px;
   
   }
+
 
   .modal__close { 
    right: 5px;

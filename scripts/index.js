@@ -1,5 +1,5 @@
 const initialCards = [ 
-  {
+  {           
     name: "Yoseimite Valley",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
   },
@@ -116,7 +116,7 @@ function handleOverlayClick(event) {
   }
 }
 
-// Add this listener to all modals
+
 document.querySelectorAll(".modal").forEach((modal) => {
   modal.addEventListener("mousedown", handleOverlayClick);
 });
@@ -130,13 +130,11 @@ function handleEscClose(event) {
   }
 }
 
-// Attach event listener when popup is opened
 function openPopup(modal) {
   modal.classList.add("modal_opened");
   document.addEventListener("keydown", handleEscClose);
 }
 
-// Remove event listener when popup is closed
 function closePopup(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keydown", handleEscClose);
@@ -169,7 +167,6 @@ function handleAddCardFormSubmit(e) {
 /*----------------------------------------------------------------------------------*/
 
 
-//Form listeners 
 profileEditButton.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
@@ -188,6 +185,7 @@ profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 
 addNewCardButton.addEventListener("click", () => openPopup(addCardModal));
+
 addCardModalCloseButton.addEventListener("click", () => closePopup(addCardModal));
 
 imageViewerCloseButton.addEventListener("click", () => {
