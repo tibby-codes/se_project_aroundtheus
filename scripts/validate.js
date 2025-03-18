@@ -19,12 +19,17 @@ const validationConfig = {
   // Function to hide input error
   function hideInputError(formElement, inputElement, config) {
     const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
+
+    if (!errorElement) {
+      console.error(`Error element not found for input: ${inputElement.id}`);
+      return; 
+  }
     inputElement.classList.remove(config.inputErrorClass);
     errorElement.textContent = "";
     errorElement.classList.remove(config.errorClass);
   }
   
-  // Function to check input validity
+  // Function to check input validity 
   function checkInputValidity(formElement, inputElement, config) {
     if (!inputElement.validity.valid) {
       showInputError(formElement, inputElement, config);

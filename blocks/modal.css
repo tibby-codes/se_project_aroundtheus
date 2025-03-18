@@ -102,9 +102,6 @@
 
 }
 
-.modal__input:invalid {
-  border-bottom: #FF0000;
-}
 
 .modal__button {
   padding: 15px 20px;
