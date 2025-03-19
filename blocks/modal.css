@@ -91,6 +91,7 @@
 }
 
 .modal__input {
+  display: block;
   margin-bottom: 15px;
   padding: 10px;
   padding-left: 0;
@@ -102,7 +103,6 @@
 
 }
 
-
 .modal__button {
   padding: 15px 20px;
   font-size: 18px;
@@ -110,12 +110,19 @@
   color: white;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
 }
 
 .modal__error {
   color: #FF0000;
+  min-height: 16px;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.modal__error_visible {
+  visibility: visible;
 }
 
 .modal__button_disabled {

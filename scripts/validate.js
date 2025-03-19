@@ -14,6 +14,8 @@ const validationConfig = {
     inputElement.classList.add(config.inputErrorClass);
     errorElement.textContent = inputElement.validationMessage;
     errorElement.classList.add(config.errorClass);
+    errorElement.style.display = "block"; 
+
   }
   
   // Function to hide input error

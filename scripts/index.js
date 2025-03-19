@@ -61,13 +61,6 @@ const modalCaption = imageViewerModal.querySelector(".modal__caption");
 /*                            Functions                                           */
 /*--------------------------------------------------------------------------------*/
 
-function closePopup(modal) {
-  modal.classList.remove("modal_opened");
-}
-
-function openPopup(modal) {
-  modal.classList.add("modal_opened");
-}
 
 function renderCard(cardData, cardListEl) {
 const cardElement = getCardElement(cardData);
@@ -153,6 +146,11 @@ function handleProfileEditSubmit(e) {
 
 function handleAddCardFormSubmit(e) {
   e.preventDefault();
+  if (!cardTitleEl.validity.valid || !cardInputUrl.validity.valid) {
+    showInputError(addCardFormElement, cardTitleEl, validationConfig);
+    showInputError(addCardFormElement, cardInputUrl, validationConfig);
+    return; // Stop submission if inputs are invalid
+  }
   const name = cardTitleEl.value;
   const link = cardInputUrl.value;
 
