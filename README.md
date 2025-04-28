@@ -2,7 +2,7 @@
 
 ## Description
 
-The Goal of this Project is to show responsiveness across the most widley used screen sizes. Also Learning Figma design from the beginning stages to apply to my project. Users are now able to add and remove cards and images of their own.
+Refactoring and orginizing code is the main goal of this sprints project!
 
 ## Link to my Project!
 
