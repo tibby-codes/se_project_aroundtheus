@@ -43,6 +43,12 @@ const modalCaption = imageViewerModal.querySelector(".modal__caption");
 
 
 
+profileEditButton.addEventListener("click", () => {
+  profileTitleInput.value = profileTitle.textContent;
+  profileDescriptionInput.value = profileDescription.textContent;
+  openPopup(profileEditModal);
+});
+
 function openImageModal(link, name) {
   modalImage.src = link;
   modalImage.alt = name;
@@ -98,12 +104,11 @@ function handleAddCardFormSubmit(e) {
 }
 
 
-
 profileEditButton.addEventListener("click", () => {
-  profileTitleInput.value = profileTitle.textContent;
-  profileDescriptionInput.value = profileDescription.textContent;
+  resetValidation(profileEditForm, profileFormValidator); 
   openPopup(profileEditModal);
 });
+
 
 profileEditCloseButton.addEventListener("click", () => closePopup(profileEditModal));
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
@@ -112,7 +117,10 @@ addNewCardButton.addEventListener("click", () => openPopup(addCardModal));
 addCardModalCloseButton.addEventListener("click", () => closePopup(addCardModal));
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 
-imageViewerCloseButton.addEventListener("click", () => closePopup(imageViewerModal));
+imageViewerCloseButton.addEventListener("click", () => {
+  closePopup(imageViewerModal);
+}); 
+
 document.querySelectorAll(".modal").forEach(modal => {
   modal.addEventListener("mousedown", handleOverlayClick);
 });
