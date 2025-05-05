@@ -46,6 +46,7 @@ const modalCaption = imageViewerModal.querySelector(".modal__caption");
 profileEditButton.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
+  profileFormValidator.resetValidation()
   openPopup(profileEditModal);
 });
 
@@ -101,13 +102,10 @@ function handleAddCardFormSubmit(e) {
   renderCard({ name, link }, cardListEl);
   closePopup(addCardModal);
   e.target.reset();
+  addCardFormValidator.resetValidation()
 }
 
 
-profileEditButton.addEventListener("click", () => {
-  resetValidation(profileEditForm, profileFormValidator); 
-  openPopup(profileEditModal);
-});
 
 
 profileEditCloseButton.addEventListener("click", () => closePopup(profileEditModal));
