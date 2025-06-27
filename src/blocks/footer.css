@@ -6,7 +6,7 @@
   margin-bottom: 60px;
   margin-top: 30.75px;
   margin-left: 200px;
-  margin-right: 0 auto;
+  margin-left: auto; margin-right: auto;
   color: #545454;
   max-width: 880px;
 }
